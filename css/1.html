@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title></title>
+<style>
+* {
+padding: 0;
+margin: 0;
+}
+.marqueform {
+width: 1200px;
+height: 268px;
+margin: 0 auto;
+overflow: hidden;
+}
+.marqueform > ul {
+/*设置ul的宽度为2倍div的宽度*/
+width: 268%;
+list-style: none;
+/*动画属性*/
+animation: imgMove 15s linear infinite;
+
+}
+/* 暂停动画 */
+.marqueform>ul:hover{
+animation-play-state: paused;
+}
+.marqueform>ul>li:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 0 10px 2px #000;
+}
+
+.marqueform > ul > li {
+width: 360px;
+height: 266px;
+float: left;
+margin: 0 20px;
+border: 1px solid red;
+transition: 1s;
+}
+
+.marqueform img {
+width: 100%;
+height: 266px;
+}
+/*创建动画*/
+@keyframes imgMove {
+from {
+transform: translateX(-2000px);
+}
+to {
+transform: translateX(0px);
+}
+}
+</style>
+</head>
+<body>
+<div class="marqueform">
+<ul>
+<li><img src="../img/b1.jpg" alt=""/></li>
+<li><img src="../img/b2.jpg" alt=""/></li>
+<li><img src="../img/b3.jpg" alt=""/></li>
+<li><img src="../img/b4.jpg" alt=""/></li>
+<li><img src="../img/b5.jpg" alt=""/></li>
+<li><img src="../img/b6.jpg" alt=""/></li>
+<li><img src="../img/b7.jpg" alt=""/></li>
+<li><img src="../img/b8.jpg" alt=""/></li>
+
+<li><img src="../img/b1.jpg" alt=""/></li>
+<li><img src="../img/b2.jpg" alt=""/></li>
+<li><img src="../img/b3.jpg" alt=""/></li>
+<li><img src="../img/b4.jpg" alt=""/></li>
+<li><img src="../img/b5.jpg" alt=""/></li>
+<li><img src="../img/b6.jpg" alt=""/></li>
+<li><img src="../img/b7.jpg" alt=""/></li>
+<li><img src="../img/b8.jpg" alt=""/></li>
+
+</ul>
+</div>
+</body>
+</html>
